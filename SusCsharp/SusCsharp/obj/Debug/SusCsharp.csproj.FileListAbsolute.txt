@@ -1,0 +1,26 @@
+E:\CSHARPFD\SusCsharp\SusCsharp\bin\Debug\SusCsharp.exe.config
+E:\CSHARPFD\SusCsharp\SusCsharp\bin\Debug\SusCsharp.exe
+E:\CSHARPFD\SusCsharp\SusCsharp\bin\Debug\SusCsharp.pdb
+E:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.csprojAssemblyReference.cache
+E:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.Form1.resources
+E:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.Properties.Resources.resources
+E:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.csproj.GenerateResource.cache
+E:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.csproj.CoreCompileInputs.cache
+E:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.exe
+E:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.pdb
+F:\CSHARPFD\SusCsharp\SusCsharp\bin\Debug\SusCsharp.exe.config
+F:\CSHARPFD\SusCsharp\SusCsharp\bin\Debug\SusCsharp.exe
+F:\CSHARPFD\SusCsharp\SusCsharp\bin\Debug\SusCsharp.pdb
+F:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.csprojAssemblyReference.cache
+F:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.Form1.resources
+F:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.Properties.Resources.resources
+F:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.csproj.GenerateResource.cache
+F:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.csproj.CoreCompileInputs.cache
+F:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.exe
+F:\CSHARPFD\SusCsharp\SusCsharp\obj\Debug\SusCsharp.pdb
+E:\2022\DS\3 bi\C#\csharp acho que é o controle de senhas\SusCsharp\SusCsharp\obj\Debug\SusCsharp.Form1.resources
+E:\2022\DS\3 bi\C#\csharp acho que é o controle de senhas\SusCsharp\SusCsharp\obj\Debug\SusCsharp.Form2.resources
+E:\2022\DS\3 bi\C#\csharp acho que é o controle de senhas\SusCsharp\SusCsharp\obj\Debug\SusCsharp.Properties.Resources.resources
+E:\2022\DS\3 bi\C#\csharp acho que é o controle de senhas\SusCsharp\SusCsharp\obj\Debug\SusCsharp.csproj.GenerateResource.cache
+E:\2022\DS\3 bi\C#\csharp acho que é o controle de senhas\SusCsharp\SusCsharp\obj\Debug\SusCsharp.csproj.CoreCompileInputs.cache
+E:\2022\DS\3 bi\C#\csharp acho que é o controle de senhas\SusCsharp\SusCsharp\obj\Debug\SusCsharp.csprojAssemblyReference.cache
