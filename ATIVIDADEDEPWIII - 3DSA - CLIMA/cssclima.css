@@ -1,0 +1,45 @@
+.climabox {
+    height: 360px;
+    width: 500px;
+    background-color: #052a35;
+    text-shadow: 0 0 0.2em black;
+    color: white;
+    border-radius: 13px;
+    box-shadow: 0px 0px 4px 1px black;
+    padding: 42px;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 110px;
+    align-items: center;
+}
+
+body {
+    background-image: url('https://4kwallpapers.com/images/wallpapers/new-york-city-cityscape-night-city-lights-reflections-5k-3840x2160-435.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 0.3em black;
+    font-family: 'Stone Print Bold SC';
+    font-size: 26px;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #052a35;
+    padding: 1.5rem 8rem;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 0.2em black;
+    font-family: 'Stone Print Bold SC';
+
+}
+
+h3 {
+    font-size: 14px;
+    text-shadow: 0 0 0.2em black;
+    font-weight: 600;
+}
