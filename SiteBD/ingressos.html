@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="Css.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/66/66593.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ingressos</title>
+</head>
+<body>
+
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #313131;
+          height: 60px;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 18px 18px;
+          text-decoration: none;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #c4c4c4;
+        }
+        
+        .active {
+          background-color: #015033;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <ul>
+          <li><a class="active"  href="#home">EvenTec</a></li>
+
+          <li><a href="indexeventos.html">Eventos</a></li>
+          <li><a href="usuarios.html">Usuários</a></li>
+          <li><a href="ingressos.html">Ingressos</a></li>
+          <li style="float:right"><a href="#about">Sobre</a></li>
+        </ul>
+<br>
+    <main role="main" class="container1">
+        <div class="box">
+
+    <div class="row">
+
+    <div class="col-4">
+    <br><br><br>
+    <input type="text" placeholder="Código" class="input2"  name="cod" id="cod">
+    </div>
+    <div class="col-4">
+    <br><br><br>
+    <input placeholder="Título" class="input2" type="text" id="titulo">
+    </div>
+    <div class="col-4">
+    <br><br><br>
+    <input placeholder="Data" class="input2" type="date" id="dia">
+    </div>
+
+    <div class="col-4">
+    <br><br><br>
+    <input placeholder="Local" class="input2" type="text" id="local">
+</div>
+    <div class="col-4">
+    <br><br><br>
+    <input placeholder="Valor" class="input2" type="text" id="valor">
+</div>
+    <div class="col-4">
+    <br><br><br>
+    <input placeholder="Total De Ingressos" class="input2" type="text" id="ingressos">
+</div>
+    </div>
+    <br><br>
+    
+
+    <div class="row">
+    <div class="text-center">
+    <button type="button" class="button is-primary" onclick="gravar()"> Adicionar </button>
+    </div>
+    
+    </div>
+    </div>
+
+    <br><br>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th style="color: #006b44;">Código:</th>
+                <th style="color: #006b44;">Título:</th>
+                <th style="color: #006b44;">Data:</th>
+                <th style="color: #006b44;">Local:</th>
+                <th style="color: #006b44;">Valor:</th>
+                <th style="color: #006b44;">Total de ingressos:</th>
+            </tr>
+        </thead>
+        <tbody id="tabela_usuarios">
+
+        </tbody>
+    </table>
+
+    </main>
+    <script>
+    
+    var atl_reg = "";
+
+    window.addEventListener("load", (event) => {
+        carregarUsuarios();
+    });
+    
+    document.getElementById('alert_delete').addEventListener('click', () => {
+        document.getElementById('alert').style.display = "none"
+    });
+
+    function carregarUsuarios() {
+        var url = 'SelectEve.php'
+        var tabela = ''
+
+        fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+
+                tabela = ''
+                for (let item in data) {
+                    tabela += `<tr>
+            <td>`+ data[item].cod + `</td>
+            <td>`+ data[item].titulo + `</td>
+            <td>`+ data[item].dia + `</td>
+            <td>`+ data[item].local + `</td>
+            <td>`+ data[item].valor + `</td>
+            <td>`+ data[item].ingressos + `</td>
+            <td> 
+                <button class="button" onclick="excluirUsuario('`+ data[item].cod + `')"><i class="fas fa-trash"></i></button>
+                <button class="button" onclick="editarUsuario('`+ data[item].cod + `','`+ data[item].titulo + `','`+ data[item].dia + `','`+ data[item].local + `','`+ data[item].valor + `','`+ data[item].ingressos + `')"><i class="fasfa-pen"></i></button>
+                </td>
+                </tr>`
+                }
+                document.getElementById("tabela_usuarios").innerHTML = tabela
+
+            })
+    }
+
+    function gravar() {
+        var cod = document.getElementById("cod").value;
+        var titulo = document.getElementById("titulo").value;
+        var data = document.getElementById("dia").value;
+        var local = document.getElementById("local").value;
+        var valor = document.getElementById("valor").value;
+        var ingressos = document.getElementById("ingressos").value;
+        var url = ""
+            if(atl_reg != "" & atl_reg == cod) {
+                url = 'UpdateEve.php ?cod=' + cod + '&titulo=' + titulo + '&dia=' + dia + '&local=' + local + '&valor=' + valor + '&ingressos=' + ingressos
+            } else {
+                url = 'InsertEve.php ?cod=' + cod + '&titulo=' + titulo + '&dia=' + dia + '&local=' + local + '&valor=' + valor + '&ingressos=' + ingressos
+            }
+
+        fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+                document.getElementById("mensagem").innerHTML = data.mensagem
+                document.getElementById("alert").style.display = "block"
+                carregarUsuarios()
+            })
+    }
+
+    function excluirUsuario(cpf) {
+            var url = 'Delete.php?cpf=' + cod
+
+            if(confirm("Tem certeza que deseja excluir o evento " + cod + "?")) {
+                fetch(url)
+                .then((response) => response.json())
+                .then((data) => {
+                    document.getElementById("mensagem").innerHTML = data.mensagem
+                    document.getElementById("alert").style.display = "block"
+                    carregarUsuarios()
+                })
+
+            }
+        }
+
+        function editarUsuario(cod, titulo, dia, local, valor, ingressos) {
+            atl_reg = cod
+            document.getElementById("cod").value = cod
+            document.getElementById("titulo").value = titulo
+            document.getElementById("titulo").focus()
+            document.getElementById("dia").value = dia
+            document.getElementById("local").value = local
+            document.getElementById("valor").value = valor
+            document.getElementById("ingressos").value = ingressos
+        }
+    
+    </script>
+
+</body>
+</html>

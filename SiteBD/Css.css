@@ -1,0 +1,117 @@
+body {
+    background-image: url("https://media.istockphoto.com/id/1157674417/vector/abstract-white-and-gray-modern-background-vector-illustration.jpg?s=612x612&w=0&k=20&c=bop0uzEAanp70pR0j2KvcSS63up6LrLzD7tZnoj4APU=");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+
+.container {
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 40px;
+    background-color: #015033;
+    box-shadow: 3px 3px rgba(192, 192, 192, 0.952);
+
+}
+.container1 {
+    border-radius: 10px;
+padding: 20px;
+margin: 0 auto;
+width: 1000px;
+    background-color: #015033;
+    box-shadow: 3px 3px rgba(192, 192, 192, 0.952);
+
+}
+
+.box {
+    padding: 20px;
+    border: 1px solid #ffffff;
+}
+.box1 {
+    border: 1px solid #ffffff;
+}
+.columns {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+.field {
+    margin-bottom: 10px;
+    
+    
+}
+
+.label {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(221, 221, 221);
+    box-sizing: border-box;
+}
+.input2 {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid rgb(221, 221, 221);
+    box-sizing: border-box;
+    align-items: center;
+}
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.is-primary {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid rgb(221, 221, 221);
+
+
+}
+.button:hover {
+    background-color:#015033;
+    color: white;
+  }
+
+
+.notification {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #def3ff;
+    border: 1px solid #027bd1;
+    border-radius: 4px;
+}
+
+.delete {
+    float: right;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+table {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    
+
+
+    
+}
+
+th, td {
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.fa-trash, .fa-pen {
+    margin-right: 5px;
+}

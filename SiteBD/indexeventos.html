@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTOS</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/483/483606.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<style>
+    body {
+  background-image: url("https://media.istockphoto.com/id/1157674417/vector/abstract-white-and-gray-modern-background-vector-illustration.jpg?s=612x612&w=0&k=20&c=bop0uzEAanp70pR0j2KvcSS63up6LrLzD7tZnoj4APU=");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 250px;
+  object-fit: cover;
+  width: 250px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+  transition: 0.4s;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  padding: 14px;
+  height: 350px;
+  width: 500px;
+  margin-top: 3%;
+  display: inline-block;
+
+
+  font-family: arial;
+}
+
+.card:hover {
+  box-shadow: 0 15px 19px 0 rgba(0, 0, 0, 0.7);
+}
+
+.title {
+  color: grey;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  outline: 0;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.is-primary {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid rgb(221, 221, 221);
+
+
+}
+.button:hover {
+    background-color:#015033;
+    color: white;
+  }
+
+
+
+.active {
+  background-color: #009c45;
+}
+
+footer {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0.6rem 6rem;
+}
+
+footer p {
+  text-align: center;
+  font-family: 'Times New Roman', serif;
+  font-size: 15px;
+}
+</style>
+</head>
+
+<body>
+        <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #313131;
+              height: 60px;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 18px 18px;
+              text-decoration: none;
+              font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+            }
+            
+            li a:hover:not(.active) {
+              background-color: #c4c4c4;
+            }
+            
+            .active {
+              background-color: #015033;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <ul>
+              <li><a class="active"  href="#home">EvenTec</a></li>
+    
+              <li><a href="indexeventos.html">Eventos</a></li>
+              <li><a href="usuarios.html">Usuários</a></li>
+              <li><a href="ingressos.html">Ingressos</a></li>
+              <li style="float:right"><a href="#about">Sobre</a></li>
+            </ul>
+            <br>
+  <div class="container">
+    <div class="card">
+      <img src="https://i.uai.com.br/IKQeeG8piqiR4bbFPMjp98SqCfc=/750x0/imgsapp2.uai.com.br/app/noticia_133890394703/2018/05/07/226823/20180507175442314275u.jpg"
+        alt="John">
+      <p class="title">Guns N' Roses</p>
+      <p>
+      <form action="turmadeds.html">
+        <button type="button" class="button is-primary" onclick="gravar()"> Comprar </button>    
+      </form>
+      </p>
+    </div>
+    <div class="card">
+      <img
+        src="https://www.be-subjective.de/wp-content/uploads/2018/06/bs-2018-A-Perfect-Circle-02-c-Tim-Cadiente.jpg">
+      <p class="title">A Perfect Circle</p>
+      <p>
+      <form action="turmadeadm.html">
+        <button type="button" class="button is-primary" onclick="gravar()"> Comprar </button>   
+      </form>
+    </div>
+    <div class="card">
+      <img
+        src="https://www.metalrevolution.net/blog/wp-content/uploads/2022/02/Scorpions-2022-por-divulgacao.jpg">
+      <p class="title">Scorpions</p>
+      <p>
+      <form action="turmademkt.html">
+        <button type="button" class="button is-primary" onclick="gravar()"> Comprar </button>    </div>
+    </div>
+  </div>
+</body>
+
+</html>
+<br>
+<br>
+<br>
+<br>
+<footer>
+  <p>PROJETO EVENTEC - 3DSA - AGATHA FINARDI BRAGION, LORRANNY REGINA DE MATOS CUNHA E MARIA EDUARDA MIUKE CAMPELO TAGOMORE</h5>
+</footer>
+<!--
+<div class="container">
+
+  <div class="tile" id="tabela_eventos">
+  </div>
+
+</div>
+
+<script>
+    var codigo_alt = "";
+
+    window.addEventListener("load", (event) => {
+        carregarEventos();
+    });
+
+    function carregarEventos() {
+        var url = 'eventos.php'
+        var tabela = ''
+
+        fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+
+                tabela = ''
+                for (let item in data) {
+                    tabela += `
+<div class="card is-flex-direction-row mx-3" style="width: 36rem">
+<div class="card-image">
+<figure class="image is-4by3">
+  <img src="`+ data[item].eve_foto + `">
+</figure>
+</div>
+<div class="card-content">
+<p class="title">
+    `+ data[item].eve_titulo + `
+</p>
+<p class="subtitle">
+    `+ data[item].eve_local + `
+</p>
+<a class="button" href="indexeventos.html?codigo=`+ data[item].eve_codigo + `">
+  Comprar
+</a>
+</div>
+<footer class="card-footer">
+<p class="card-footer-item">
+  <span>
+    `+ data[item].eve_data + `
+  </span>
+</p>
+<p class="card-footer-item">
+  <span>
+    `+ data[item].eve_preco + `
+  </span>
+</p>
+</footer>
+</div>
+`
+                }
+                document.getElementById("tabela_eventos").innerHTML = tabela
+
+            })
+    }
+
+</script>
+-->

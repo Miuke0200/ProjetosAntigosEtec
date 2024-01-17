@@ -1,0 +1,99 @@
+
+
+
+
+
+<!--
+//deixamos o coódigo comentado pois não conseguimos testar adequadamente pelo XAMPP//
+<div class="container">
+
+    <div id="evento">
+
+    </div>
+    <div class="notification is-info" id="alert" style="display: none;">
+      <div id="mensagem"></div>
+      <button class="delete" id="alert_delete"></button>
+  </div>
+
+</div>
+<script>
+var codigo_alt = "";
+
+window.addEventListener("load", (event) => {
+    carregarEvento();
+});
+
+function carregarEvento() {
+    const urlatual = new URL(window.location.href); 
+    const codigo = urlatual.searchParams.get('codigo'); 
+
+    var url = 'eventos.php?codigo=' + codigo
+    var tabela = ''
+
+    fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+
+            tabela = ''
+            for (let item in data) {
+                tabela += `<div class="card is-flex-direction-row mx-3" style="width: 36rem">
+<div class="card-image">
+<figure class="image is-4by3">
+<img src="`+ data[item].eve_foto + `">
+</figure>
+</div>
+<div class="card-content">
+<p class="title">
+`+ data[item].eve_titulo + `
+</p>
+<p class="subtitle">
+`+ data[item].eve_local + `
+</p>
+<div class="box">
+Informe o seu CPF:
+<input type="text" class="input" id="cpf">
+<br>
+Quantidade de Ingressos:
+<input type="number" class="input" value="1" id="qtdingressos">
+<br>
+<button class="button" onclick="comprar()">Comprar</button>
+</div>
+</div>
+<footer class="card-footer">
+<p class="card-footer-item">
+<span>
+`+ data[item].eve_data + `
+</span>
+</p>
+<p class="card-footer-item">
+<span>
+`+ data[item].eve_preco + `
+</span>
+</p>
+</footer>
+</div>
+`
+            }
+            document.getElementById("evento").innerHTML = tabela
+
+        })
+}
+
+function comprar() {
+    const urlatual = new URL(window.location.href); 
+    const codigo = urlatual.searchParams.get('codigo');             
+    var cpf = document.getElementById("cpf").value;
+    var qtdingressos = document.getElementById("qtdingressos").value;
+    var url = "eventos_ingresso.php?codigo=" + codigo + "&cpf=" + cpf + "&qtdingressos=" + qtdingressos
+
+    fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+            document.getElementById("mensagem").innerHTML = data.mensagem
+            document.getElementById("alert").style.display = "block"
+            carregarEventos()
+        })
+}
+
+</script>
+-->
