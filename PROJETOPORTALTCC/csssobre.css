@@ -1,0 +1,84 @@
+body {
+    background-image: url("https://cutewallpaper.org/25/animated-white-wallpaper-gif/march-22-2017-at-1217pm-from-utrippy-optical-illusions-gif-background-artist-collective.gif");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden
+}
+
+.container {
+    position: relative;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sobre {
+    height: 200px;
+    width: 400px;
+    background-color: #009c45;
+    text-shadow: 0 0 0.2em black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.4s;
+    color: white;
+    border-radius: 13px;
+    padding: 42px;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 110px;
+    align-items: center;
+}
+
+.sobre:hover {
+    box-shadow: 0 15px 19px 0 rgba(0, 0, 0, 0.7);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 34px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: grey;
+}
+
+.active {
+    background-color: #009c45;
+}
+
+footer {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 0.7rem 6rem;
+}
+
+footer p {
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+}

@@ -1,0 +1,19 @@
+{
+    "titulo": "primeiro tema de tcc",
+    "autores": [
+ {"nomeCompleto":"Carlos Gomes", "email":"xuaj@jsj.com"},
+ {"nomeCompleto":"Agatha Finardi Bragion", "email":"agathaj@jsj.com"},
+ {"nomeCompleto":"Maria Eduarda Miuke Campelo Tagomore", "email":"miukej@jsj.com"}
+    ],
+    "orientadores" : [
+        {"nomeCompleto":"Sérgio Montagner"}
+    ],
+    "curso": "DS",
+    "turma": "3DSA",
+    "problema": "lorem ipsum",
+    "objetivo": "lorem ipsum",
+    "justificativa": "lorem ipsum",
+    "metodologia": "lorem ipsum",
+    "hipotese": "lorem ipsum"
+
+}
